@@ -1,41 +1,41 @@
-.menu__list-link {
-  font-family: "Quicksand-Regular", sans-serif;
-  font-weight: 400;
-}
-
-.menu__list-link--active, .menu__list-link:hover, a, body {
+a, body {
   font-family: "Quicksand-Medium", sans-serif;
   font-weight: 500;
 }
 
-.footer-top__title {
+.footer-top__title, .menu__list-link {
   font-family: "Roboto-Regular", sans-serif;
   font-weight: 400;
 }
 
+.menu__list-link--active, .menu__list-link:hover {
+  font-family: "Roboto-Bold", sans-serif;
+  font-weight: 700;
+}
+
 @font-face {
-  font-family: "Quicksand-Regular", sans-serif;
+  font-family: "Quicksand-Regular";
   font-weight: 400;
   font-style: normal;
   src: local("Quicksand-Medium"), url("../fonts/Quicksand-Regular.woff2") format("woff2"), url("../fonts/Quicksand-Regular.woff") format("woff");
   font-display: swap;
 }
 @font-face {
-  font-family: "Quicksand-Medium", sans-serif;
+  font-family: "Quicksand-Medium";
   font-weight: 500;
   font-style: normal;
   src: local("Quicksand-Medium"), url("../fonts/Quicksand-Medium.woff2") format("woff2"), url("../fonts/Quicksand-Medium.woff") format("woff");
   font-display: swap;
 }
 @font-face {
-  font-family: "Roboto-Regular", sans-serif;
+  font-family: "Roboto-Regular";
   font-weight: 400;
   font-style: normal;
   src: local("Quicksand-Medium"), url("../fonts/Roboto-Regular.woff2") format("woff2"), url("../fonts/Roboto-Regular.woff") format("woff");
   font-display: swap;
 }
 @font-face {
-  font-family: "Roboto-Bold", sans-serif;
+  font-family: "Roboto-Bold";
   font-weight: 700;
   font-style: normal;
   src: local("Quicksand-Medium"), url("../fonts/Roboto-Bold.woff2") format("woff2"), url("../fonts/Roboto-Bold.woff") format("woff");
@@ -141,7 +141,7 @@ a {
 }
 .menu__list-link {
   color: #282929;
-  padding-bottom: 1px;
+  padding-bottom: 0 2px 1px;
   transition: all 0.3s;
 }
 .menu__list-link:hover {
