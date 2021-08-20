@@ -3,7 +3,7 @@ a, body {
   font-weight: 500;
 }
 
-.product-item__price, .categories__link, .info__item-title, .footer-top__title, .menu__list-link, .product-item--sale .product-item__img-box::before, .video-fashion__link, .top-slider__link, .footer-top__form-btn {
+.blog__item-title, .product-item__price, .categories__link, .info__item-title, .footer-top__title, .menu__list-link, .product-item--sale .product-item__img-box::before, .video-fashion__link, .top-slider__link, .footer-top__form-btn {
   font-family: "Roboto-Regular", sans-serif;
   font-weight: 400;
 }
@@ -1623,6 +1623,7 @@ footer {
   flex-direction: column;
   justify-content: center;
   text-align: center;
+  box-shadow: 0 10px 40px 0 rgba(187, 187, 187, 0.3);
 }
 .promo__clock-item span {
   font-size: 48px;
@@ -1646,4 +1647,83 @@ footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.blog {
+  padding: 50px 0 160px;
+  background-image: url("../images/bgpromo.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+.blog__items {
+  display: flex;
+  justify-content: space-between;
+}
+.blog__item {
+  background-color: #fff;
+  max-width: 370px;
+  border: 1px solid #ececec;
+}
+.blog__item:hover {
+  box-shadow: 20px 0 60px 0 rgba(202, 202, 202, 0.35);
+  border: none;
+}
+.blog__item:hover .blog__item-link {
+  color: #fe3e57;
+}
+.blog__item:hover .blog__item-link::after {
+  background-image: url("../images/icons/searchaccent.svg");
+  width: 20px;
+  height: 20px;
+}
+.blog__item-imglink {
+  display: block;
+}
+.blog__item-imglink__img {
+  height: 288px;
+  object-fit: cover;
+}
+.blog__item-box {
+  padding: 30px 40px;
+}
+.blog__item-info {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.blog__item-author, .blog__item-date {
+  padding-left: 30px;
+  position: relative;
+}
+.blog__item-author::before, .blog__item-date::before {
+  content: "";
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  left: 0;
+  top: 0;
+}
+.blog__item-author::before {
+  background-image: url(../images/icons/author.svg);
+}
+.blog__item-date::before {
+  background-image: url(../images/icons/clock1.svg);
+}
+.blog__item-title {
+  color: #282929;
+  font-size: 22px;
+  margin-bottom: 20px;
+}
+.blog__item-link {
+  position: relative;
+}
+.blog__item-link::after {
+  content: "";
+  width: 22px;
+  height: 22px;
+  background-image: url("../images/icons/searchblog.svg");
+  position: absolute;
+  top: 1px;
+  right: -30px;
 }
