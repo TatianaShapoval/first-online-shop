@@ -148,6 +148,49 @@ a {
   margin: 0 auto 55px;
 }
 
+.breadcrumbs {
+  display: inline-flex;
+  justify-content: center;
+  padding-left: 25px;
+  position: relative;
+}
+.breadcrumbs::before {
+  content: "";
+  position: absolute;
+  background-image: url(../images/icons/home.svg);
+  width: 16px;
+  height: 16px;
+  left: 0;
+  top: 4px;
+}
+.breadcrumbs__list {
+  display: flex;
+}
+.breadcrumbs__item {
+  color: #727272;
+  padding-right: 40px;
+  position: relative;
+}
+.breadcrumbs__item::after {
+  content: "";
+  position: absolute;
+  background-image: url(../images/icons/twoarrows.svg);
+  width: 30px;
+  height: 30px;
+  right: 5px;
+  top: 1px;
+}
+.breadcrumbs__item:last-child {
+  color: #fe3e57;
+  padding-right: 0;
+}
+.breadcrumbs__item:last-child::after {
+  display: none;
+}
+.breadcrumbs__link {
+  color: inherit;
+}
+
 /* Slider */
 .slick-slider {
   position: relative;
@@ -1297,6 +1340,16 @@ footer {
   display: inline-block;
   margin-left: 25px;
   vertical-align: middle;
+}
+
+.top__container {
+  max-width: 1700px;
+  margin: 0 auto;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
+  padding: 120px 0 130px;
+  text-align: center;
 }
 
 .top-slider {
