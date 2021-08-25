@@ -555,6 +555,7 @@ footer{
 }
 .partners{
     padding-top: 75px;
+    padding-bottom: 75px;
     &__list{
         height: 170px;
         display: flex;
@@ -735,6 +736,55 @@ footer{
         box-shadow: 0px 5px 25px 0px rgba(254, 62, 87, 0.35);
 
     }
+}
+
+.shop{
+    padding: 120px 0 105px;
+    &__inner{
+        display: flex; 
+    }
+    &__filters{
+        width: 370px;
+        margin-right: 30px;
+    }
+}
+.filter{
+    &__item{
+        padding: 35px 30px 40px;
+        border: 1px solid #ececec;
+        margin-bottom: 40px;
+
+    }
+    &__title{
+        text-transform: uppercase;
+        color: $title;
+        font-size: 22px;
+        @extend %roboto-400;
+        margin-bottom: 25px;
+    }
+}
+.filter-search{
+    &__form{
+        display: flex;
+    }
+    &__input{
+        border: none;
+        background-color: $bg;
+        width: 260px;
+        height: 50px;
+        padding: 0 5px 0 15px;
+    }
+    &__btn{
+        border: none;
+        background-color: $accent;
+        height: 50px;
+        width: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+    }
+
 }
 
 @import './media';
