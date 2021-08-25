@@ -3,7 +3,7 @@ a, body {
   font-weight: 500;
 }
 
-.blog__item-title, .product-item__price, .categories__link, .info__item-title, .footer-top__title, .menu__list-link, .product-item--sale .product-item__img-box::before, .video-fashion__link, .top-slider__link, .footer-top__form-btn {
+.modal__btn, .modal__link, .blog__item-title, .product-item__price, .categories__link, .info__item-title, .footer-top__title, .menu__list-link, .product-item--sale .product-item__img-box::before, .video-fashion__link, .top-slider__link, .footer-top__form-btn {
   font-family: "Roboto-Regular", sans-serif;
   font-weight: 400;
 }
@@ -1779,4 +1779,52 @@ footer {
   position: absolute;
   top: 1px;
   right: -30px;
+}
+
+.modal {
+  max-width: 570px;
+  margin: 0 auto 115px;
+  padding-top: 100px;
+}
+.modal__links {
+  text-align: center;
+  margin-bottom: 40px;
+}
+.modal__link {
+  color: #909090;
+  font-size: 22px;
+  text-transform: uppercase;
+  margin: 0 30px;
+}
+.modal__link--active {
+  color: #fe3e57;
+}
+.modal__label {
+  margin-bottom: 30px;
+  display: block;
+}
+.modal__input {
+  display: block;
+  width: 100%;
+  border: none;
+  background-color: #f6f6f6;
+  margin-top: 4px;
+  height: 60px;
+  padding: 0 15px;
+}
+.modal__btn {
+  display: block;
+  background-color: #282929;
+  text-transform: uppercase;
+  color: #fff;
+  padding: 14px 0;
+  border: none;
+  display: block;
+  width: 100%;
+  cursor: pointer;
+}
+.modal__error {
+  margin-top: 12px;
+  color: #fe3e57;
+  display: inline-block;
 }
