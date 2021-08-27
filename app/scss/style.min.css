@@ -2739,3 +2739,52 @@ footer {
 .irs--flat {
   height: 30px;
 }
+
+.filter-color__label {
+  padding-bottom: 20px;
+  border-bottom: 1px solid #ececec;
+  display: flex;
+  justify-content: space-between;
+}
+.filter-color__label + filter-color__label {
+  padding-top: 20px;
+}
+.filter-color__label:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+.filter-color__input {
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  position: absolute;
+}
+.filter-color__input:checked + .filter-color__checkbox {
+  background-image: url("../images/icons/check.svg");
+}
+.filter-color__checkbox {
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  margin-left: -16px;
+  margin-top: 6px;
+}
+.filter-color__checkbox--blue {
+  background-color: #00aeef;
+}
+.filter-color__checkbox--red {
+  background-color: #f52574;
+}
+.filter-color__checkbox--green {
+  background-color: #24d4ac;
+}
+.filter-color__checkbox--orange {
+  background-color: #ff7e00;
+}
+.filter-color__checkbox--black {
+  background-color: #000;
+}
+.filter-color__checkbox--purple {
+  background-color: #923899;
+}
