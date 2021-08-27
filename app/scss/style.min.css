@@ -22,6 +22,14 @@ a, body {
   box-shadow: 0px 7px 20px 0px rgba(255, 17, 255, 0.3);
 }
 
+.filter-size__input, .filter-color__input {
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  position: absolute;
+}
+
 @font-face {
   font-family: "Quicksand-Regular";
   font-weight: 400;
@@ -2753,13 +2761,6 @@ footer {
   border-bottom: none;
   padding-bottom: 0;
 }
-.filter-color__input {
-  width: 1px;
-  height: 1px;
-  overflow: hidden;
-  clip: rect(0 0 0 0);
-  position: absolute;
-}
 .filter-color__input:checked + .filter-color__checkbox {
   background-image: url("../images/icons/check.svg");
 }
@@ -2787,4 +2788,26 @@ footer {
 }
 .filter-color__checkbox--purple {
   background-color: #923899;
+}
+
+.filter-size__label {
+  padding-left: 35px;
+  margin-bottom: 20px;
+  display: block;
+}
+.filter-size__input:checked + .filter-size__checkbox {
+  background-image: url(../images/icons/check-accent.svg);
+  border: 1px solid #fe3e57;
+}
+.filter-size__input:checked + .filter-size__checkbox + .filter-size__text {
+  color: #fe3e57;
+}
+.filter-size__checkbox {
+  width: 20px;
+  height: 20px;
+  border: 1px solid #8d8d8d;
+  position: absolute;
+  border-radius: 50%;
+  margin-top: 3px;
+  margin-left: -35px;
 }
