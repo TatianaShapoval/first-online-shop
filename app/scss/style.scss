@@ -912,6 +912,30 @@ footer{
 
     }
 }
+.filter-category{
+    &__label{
+        margin-bottom: 15px;
+        cursor: pointer;
+        display: block;
+        &:last-child{
+            margin-bottom: 0;
+        }
+    }
+    &__input{
+        @extend %checkbox-hidden;
+        &:checked + .filter-category__checkbox{
+            background-color: $accent;
+            color: #fff;
+        }
+    }
+    &__checkbox{
+        background-color: #f6f6f6;
+        color: $title;
+        display: flex;
+        justify-content: space-between;
+        padding: 16px 20px;
+    }
+}
 
 @import './media';
 

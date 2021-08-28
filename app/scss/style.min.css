@@ -22,7 +22,7 @@ a, body {
   box-shadow: 0px 7px 20px 0px rgba(255, 17, 255, 0.3);
 }
 
-.filter-size__input, .filter-color__input {
+.filter-category__input, .filter-size__input, .filter-color__input {
   width: 1px;
   height: 1px;
   overflow: hidden;
@@ -2810,4 +2810,24 @@ footer {
   border-radius: 50%;
   margin-top: 3px;
   margin-left: -35px;
+}
+
+.filter-category__label {
+  margin-bottom: 15px;
+  cursor: pointer;
+  display: block;
+}
+.filter-category__label:last-child {
+  margin-bottom: 0;
+}
+.filter-category__input:checked + .filter-category__checkbox {
+  background-color: #fe3e57;
+  color: #fff;
+}
+.filter-category__checkbox {
+  background-color: #f6f6f6;
+  color: #282929;
+  display: flex;
+  justify-content: space-between;
+  padding: 16px 20px;
 }
