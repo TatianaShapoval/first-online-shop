@@ -936,6 +936,27 @@ footer{
         padding: 16px 20px;
     }
 }
+.filter-popular{
+    &__label{
+        display: inline-block;
+        margin-bottom: 20px;
+        margin-right:8px;
+        cursor: pointer;
+        padding: 10px 0;
+    }
+    &__input{
+        @extend %checkbox-hidden;
+        &:checked + .filter-popular__checkbox{
+            background-color: $accent;
+            border-color: $default;
+            color: #fff ;
+        }
+    }
+    &__checkbox{
+        border: 1px solid $default;
+        padding: 10px 20px;
+    }
+}
 
 @import './media';
 
