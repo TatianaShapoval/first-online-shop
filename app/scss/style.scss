@@ -684,33 +684,8 @@ footer{
     &__item-box{
         padding: 30px 40px;
     }
-    &__item-info{
-        display: flex;
-        justify-content: space-between;
-        margin-bottom: 20px;
-    }
-    &__item-author,
-    &__item-date{
-        padding-left: 30px;
-        position: relative;
-        &::before{
-            content: '';
-            position: absolute;
-            width: 24px;
-            height: 24px;
-            left: 0;
-            top: 0;
-        }
-    }
-    &__item-author::before{
-        background-image: url(../images/icons/author.svg);
   
-
-    }
-    &__item-date::before{
-        background-image: url(../images/icons/clock1.svg);
-     
-    }
+    
     &__item-title{
         color: $title;
         @extend %roboto-400;
@@ -729,6 +704,33 @@ footer{
         top: 1px;
         right: -30px;
 
+    }
+}
+.blog-box{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    &__author,
+    &__date{
+        padding-left: 30px;
+        position: relative;
+        &::before{
+            content: '';
+            position: absolute;
+            width: 24px;
+            height: 24px;
+            left: 0;
+            top: 0;
+        }
+    }
+    &__author::before{
+        background-image: url(../images/icons/author.svg);
+  
+
+    }
+    &__date::before{
+        background-image: url(../images/icons/clock1.svg);
+     
     }
 }
 
@@ -1513,6 +1515,21 @@ footer{
     }
 }
 
+.blog-page{
+    padding: 120px 0;
+    &__inner{
+        display: flex;
+        justify-content: space-between;
+
+    }
+    &__content{
+        width: 770px;
+        margin-right: 30px;
+    }
+    &__aside{
+        width: 370px;
+    }
+}
 
 
 
