@@ -3727,3 +3727,27 @@ footer {
   top: 0;
   background-image: url("../images/icons/calendar.svg");
 }
+
+.blog-one__text {
+  border: 1px solid #ececec;
+  border-top: none;
+  padding: 30px;
+  margin-top: -1px;
+}
+.blog-one__info {
+  display: flex;
+}
+.blog-one__info-link {
+  margin-right: 30px;
+  padding-left: 28px;
+  position: relative;
+}
+.blog-one__info-link::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 20px;
+  height: 22px;
+  top: 0;
+  background-image: url("../images/icons/calendar.svg");
+}

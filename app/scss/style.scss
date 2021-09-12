@@ -1707,8 +1707,40 @@ footer{
         }
     }
 }
+.blog-one{
+    &__text{
+        border: 1px solid #ececec;
+        border-top: none;
+        padding: 30px;
+        margin-top: -1px;
+    }
+    &__info{
+        display: flex;
 
+    }
+    &__info-link{
+        margin-right: 30px;
+        padding-left: 28px;
+        position: relative;
+        &::before{
+            content: "";
+            position: absolute;
+            left: 0;
+            width: 20px;
+            height: 22px;
+            top: 0;
+            background-image: url('../images/icons/calendar.svg');
+        }
+    }
+    // &__info-link--comment{
+    //     background-image: url('../images/icons/calendar.svg');
+    // }
+    // &__info-link--author::before{
+    //     background-image: url('../images/icons/author.svg');
+    // }
+}
 
+ 
 
 @import './media';
 
