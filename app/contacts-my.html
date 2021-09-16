@@ -8,7 +8,7 @@
 </head>
 <body>
 
-    <header class="header header--404-page">
+    <header class="header">
         <div class="container">
             <div class="header__inner">
                 <a class="logo" href="#">
@@ -66,23 +66,76 @@
         </div>
     </header> 
     <main class="main">
-        <section class="page-404">
-            <div class="container">
-                <div class="page-404__inner">
-                    <div class="page-404__content">
-                        <h2 class="page-404__title">
-                            OPPS! Page Not Found!!
-                        </h2>
-                        <p class="page-404__text">
-                            We are sorry but we can`t seem to find Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit cumque repellendus architecto necessitatibus molestiae dolores commodi.
-                        </p>
-                        <a class="page-404__link" href="#">
-                            BACK TO HOME
-                        </a>
+        <section class="top">
+            <div class="top__container" style="background-image: url('./images/bglogin.jpg');" >
+                <div class="container">
+                    <h2 class="top__title title">
+                        CONTACT US
+                    </h2>
+                    <div class="breadcrumbs">
+                        <ul class="breadcrumbs__list">
+                            <li class="breadcrumbs__item">
+                                <a class="breadcrumbs__link" href="#">
+                                    Home
+                                </a>
+                            </li>
+                            <li class="breadcrumbs__item">
+                                <a class="breadcrumbs__link" href="#">
+                                    Contact
+                                </a>
+                            </li>
+                        </ul>
                     </div>
-                    <img class="page-404__img" src="./images/404.png" alt="404 images">
                 </div>
-            </div>    
+            </div>
+        </section>
+
+        
+        <section class="contacts">
+            <div class="container">
+                <div class="contacts__inner">
+                    <div class="contacts__content">
+                        <h4 class="contacts__title">
+                            Feel Free Don`t Hesitate To Contact With Us
+                        </h4>
+                        <p class="contacts__text">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt consequuntur, magnam eaque ratione explicabo qui non veritatis officiis unde repudiandae, pariatur voluptatem sit mollitia consectetur. Incidunt accusamus possimus aliquid similique!
+                        </p>
+                        <ul class="contacts__items">
+                            <li class="contacts__item">
+                                <img class="contacts__item-img" src="./images/icons/phone.svg" alt="">
+                                <div class="contacts__item-text">
+                                    +0-123-456-7890
+                                    +0-123-456-7890
+                                </div>
+                            </li>
+                            <li class="contacts__item">
+                                <img class="contacts__item-img" src="./images/icons/map.svg" alt="">
+                                <div class="contacts__item-text">Ranlon Market 789 Road, Market Street, New York</div>
+                            </li>
+                            <li class="contacts__item">
+                                <img class="contacts__item-img" src="./images/icons/mail.svg" alt="">
+                                <div class="contacts__item-text">
+                                    youremailaddress@gmail.com
+                                    companyemail@gmail.com
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="contacts__form">
+                        <form  class="contacts__form-item" action="#">
+                            <p class="contacts__form-title">Contact Form</p>
+                            <div class="contacts__box-input">
+                                <input class="contacts__text-input" placeholder="Your Name" type="text">
+                                <input class="contacts__text-input" placeholder="Your E-mail address" type="text">
+                                <input class="contacts__text-input" placeholder="Subject" type="text">
+                                <textarea class="contacts__textarea" placeholder="Message here" ></textarea>
+                                <button class="contacts__btn" type="submit">SEND MESSAGE</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
         </section>
     </main>
     <footer class="footer">
