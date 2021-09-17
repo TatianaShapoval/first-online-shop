@@ -125,7 +125,11 @@ footer{
         margin-bottom: 25px;
 
     }
+    &__form{
+        display: flex;
+    }
     &__form-input{
+        margin-right: 6px;
         background-color: #fff;
         max-width: 320px;
         width: 100%;

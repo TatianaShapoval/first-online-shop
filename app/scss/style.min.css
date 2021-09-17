@@ -2288,7 +2288,11 @@ footer {
 .footer-top__text {
   margin-bottom: 25px;
 }
+.footer-top__form {
+  display: flex;
+}
 .footer-top__form-input {
+  margin-right: 6px;
   background-color: #fff;
   max-width: 320px;
   width: 100%;
