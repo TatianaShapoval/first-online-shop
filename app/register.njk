@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./scss/register.min.css">
+</head>
+<body>
+
+    {% include "./app/module/_header/_header.html" %}
+    <main class="main">
+        <section class="top">
+            <div class="top__container" style="background-image: url('./images/bglogin.jpg');" >
+                <div class="container">
+                    <h2 class="top__title title">
+                        REGISTER
+                    </h2>
+                    <div class="breadcrumbs">
+                        <ul class="breadcrumbs__list">
+                            <li class="breadcrumbs__item">
+                                <a class="breadcrumbs__link" href="#">
+                                    Home
+                                </a>
+                            </li>
+                            <li class="breadcrumbs__item">
+                                <a class="breadcrumbs__link" href="#">
+                                    REGISTER
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="modal">
+            <div class="container">
+                <div class="modal__links">
+                    <a class="modal__link modal__link--active" href="#">REGISTER</a>
+                    <a class="modal__link" href="#">LOGIN</a>
+                </div>
+                <form class="modal__form" action="#">
+                    <label class="modal__label">
+                        Username or email address*
+                        <input class="modal__input" type="text" required>
+                    </label>
+                    <label class="modal__label">
+                        Password*
+                        <input class="modal__input" type="password" required>
+                    </label>
+                    <p class="modal__text">
+                        The password will be send to tour email address.
+                    </p>
+                    <p class="modal__text">
+                        Your personal data will be used Lorem, ipsum dolor sit amet consectetur adipisicing elit. A alias similique sint atque vel animi explicabo mollitia iusto ea omnis perferendis, unde corporis eos.
+                    </p>
+                    <label class="modal__label">
+                        <input  class="" type="checkbox" required>
+                        Agree with Terms & Conditions
+                    </label>
+                    <button class="modal__btn" type="submit">
+                        REGISTER
+                    </button>
+                    
+                </form>
+            </div>
+        </section>
+
+    </main>
+    
+    {% include "./app/module/_footer/_footer.html" %}
+
+
+     
+
+    <script src="./js/main.min.js"></script>
+</body>
+</html>
