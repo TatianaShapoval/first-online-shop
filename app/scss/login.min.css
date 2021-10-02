@@ -125,7 +125,7 @@ body {
 
 .container {
   max-width: 1200px;
-  margin: 0 auto;
+  margin: 10px auto;
   padding: 0 15px;
 }
 
@@ -2519,4 +2519,10 @@ footer {
 }
 .modal__text {
   margin-bottom: 25px;
+}
+
+@media (max-width: 375px) {
+  .modal__link {
+    margin: 0 20px;
+  }
 }
