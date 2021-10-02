@@ -60,3 +60,47 @@
         align-items: center;
     }
 }
+
+@media (max-width: 920px){
+    .partners{
+        padding: 50px 0;
+        &__list{
+            flex-wrap: wrap;
+            justify-content: center;
+            height: auto;
+        } 
+        &__item{
+            margin: 10px 35px;
+        }
+    }
+}
+@media (max-width: 620px){
+    .promo{
+        padding: 60px 0;
+        &__clock{
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        &__clock-item{
+            margin: 20px 36px;
+        }
+    }
+}
+@media (max-width: 450px){
+    .promo{
+        &__clock{
+            margin-top: 30px;
+        }
+        &__clock-item{
+            margin: 9px;
+        }
+        &__link{
+            margin-top: 30px;
+        }
+    }
+    .partners{
+        &__item{
+            margin: 10px 9px;
+        }
+    }
+}
